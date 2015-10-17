@@ -1,16 +1,3 @@
-<head>
-  <title>virtual-cart</title>
-</head>
-
-<template name="layout">
-  {{#ionBody}}
-    {{> ionNavBar class="bar-positive"}}
-    {{#ionNavView}}
-      {{> yield}}
-    {{/ionNavView}}
-  {{/ionBody}}
-</template>
-
 <template name="cart">
   {{#contentFor "headerTitle"}}
     <h1 class="title">VCart</h1>

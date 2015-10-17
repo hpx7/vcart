@@ -1,13 +1,3 @@
-Router.configure({
-  layoutTemplate: 'layout'
-});
-
-Router.map(function() {
-  this.route('cart', {
-    path: '/'
-  });
-});
-
 if (Meteor.isCordova) {
   Meteor.startup(function () {
     cordova.plugins.barcodeScanner.scan(
