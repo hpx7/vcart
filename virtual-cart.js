@@ -1,26 +1,12 @@
-if (Meteor.isClient) {
-  // counter starts at 0
-  Session.setDefault('counter', 0);
+Router.configure({
+  layoutTemplate: 'layout'
+});
 
-  Template.hello.helpers({
-    counter: function () {
-      return Session.get('counter');
-    }
+Router.map(function() {
+  this.route('cart', {
+    path: '/'
   });
-
-  Template.hello.events({
-    'click button': function () {
-      // increment the counter when button is clicked
-      Session.set('counter', Session.get('counter') + 1);
-    }
-  });
-}
-
-if (Meteor.isServer) {
-  Meteor.startup(function () {
-    // code to run on server at startup
-  });
-}
+});
 
 if (Meteor.isCordova) {
   Meteor.startup(function () {
