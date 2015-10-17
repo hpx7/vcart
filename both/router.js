@@ -3,15 +3,11 @@ Router.configure({
 });
 
 Router.map(function() {
-  this.route('scan', {
-    path: '/scan'
-  });
+  this.route('scan');
 
   this.route('cart', {
     path: '/'
   });
 
-  this.route('search', {
-    path: '/search'
-  });
+  this.route('search');
 });

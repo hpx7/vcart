@@ -4,9 +4,19 @@
 
 <template name="layout">
   {{#ionBody}}
-    {{> ionNavBar class="bar-positive"}}
+    <div class="bar bar-header bar-positive nav-bar-block nav-bar-transition-ios nav-bar-direction-forward" data-navbar-container="">
+      <h1 class="title title-center" style="left: 0px; right: 0px;">VCart</h1>
+      <button class="button button-clear"><i class="icon ion-ios-plus-empty"></i></button>
+    </div>
+
     {{#ionNavView}}
       {{> yield}}
     {{/ionNavView}}
+
+    {{#ionTabs class="tabs-positive tabs-icon-top"}}
+      {{> ionTab title="Scan" path="scan" iconOff="qr-scanner" iconOn="qr-scanner"}}
+      {{> ionTab title="Cart" path="cart" iconOff="ios-cart" iconOn="ios-cart"}}
+      {{> ionTab title="Search" path="search" iconOff="search" iconOn="search"}}
+    {{/ionTabs}}
   {{/ionBody}}
 </template>

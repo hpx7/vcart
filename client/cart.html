@@ -1,22 +1,10 @@
 <template name="cart">
-  {{#contentFor "headerTitle"}}
-    <h1 class="title">VCart</h1>
-  {{/contentFor}}
-
-  {{#contentFor "headerButtonRight"}}
-    <button class="button button-clear">{{> ionIcon icon="ios-plus-empty"}}</button>
-  {{/contentFor}}
-
-  {{#contentFor "headerTitle"}}
-    <h1 class="title">VCart</h1>
-  {{/contentFor}}
-
   {{#ionView}}
     {{#ionSubheaderBar}}
       <h2 class="title">Your Cart</h2>
     {{/ionSubheaderBar}}
 
-    {{#ionContent}}
+    {{#ionContent class="has-header"}}
       {{#ionList}}
         {{#ionItem avatar=true class="item-button-right"}}
           <img src="http://www.moneysavingmadness.com/wp-content/uploads/2015/04/honey-nut-cheerios.jpg">
@@ -37,16 +25,5 @@
         {{/ionItem}}
       {{/ionList}}
     {{/ionContent}}
-
-    {{#ionFooterBar class="bar-dark"}}
-      <h1 class="title">Total: $103.45</h1>
-      <button class="button button-balanced pull-right">Checkout</button>
-    {{/ionFooterBar}}
-
-    {{#ionTabs class="tabs-positive tabs-icon-top"}}
-      {{> ionTab title="Scan" path="news" iconOff="qr-scanner" iconOn="qr-scanner"}}
-      {{> ionTab title="Cart" path="todos" iconOff="ios-cart" iconOn="ios-cart"}}
-      {{> ionTab title="Search" path="profile" iconOff="search" iconOn="search"}}
-    {{/ionTabs}}
   {{/ionView}}
 </template>
