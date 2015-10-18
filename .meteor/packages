@@ -28,3 +28,7 @@ meteoric:ionic
 useraccounts:ionic
 useraccounts:iron-routing
 accounts-password
+
+aldeed:simple-schema
+aldeed:collection2
+aldeed:autoform
