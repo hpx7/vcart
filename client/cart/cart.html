@@ -25,5 +25,14 @@
         {{/ionItem}}
       {{/ionList}}
     {{/ionContent}}
+
+    {{#ionFooterBar class="bar-calm"}}
+      <button id="scanButton" class="button button-positive pull-left">
+        {{> ionIcon icon="qr-scanner" class="dark"}}
+      </button>
+      <h1 class="title">Total: $103.45</h1>
+      <button class="button button-balanced pull-right">Checkout</button>
+    {{/ionFooterBar}}
+
   {{/ionView}}
 </template>
